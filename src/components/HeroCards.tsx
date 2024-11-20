@@ -28,7 +28,7 @@ export const HeroCards = () => {
           </div>
         </CardHeader>
 
-        <CardContent>This extensionb is awesome!</CardContent>
+        <CardContent>This extension is awesome!</CardContent>
       </Card>
 
       {/* Team */}

@@ -86,7 +86,7 @@ export const Footer = () => {
           <div>
             <a
               rel='noreferrer noopener'
-              href='#'
+              href='#features'
               className='opacity-60 hover:opacity-100'
             >
               Features
@@ -96,7 +96,7 @@ export const Footer = () => {
           <div>
             <a
               rel='noreferrer noopener'
-              href='#'
+              href='#pricing'
               className='opacity-60 hover:opacity-100'
             >
               Pricing
@@ -106,7 +106,7 @@ export const Footer = () => {
           <div>
             <a
               rel='noreferrer noopener'
-              href='#'
+              href='#faq'
               className='opacity-60 hover:opacity-100'
             >
               FAQ
@@ -148,19 +148,11 @@ export const Footer = () => {
         {/*</div>*/}
       </section>
 
-      {/*<section className='container pb-14 text-center'>*/}
-      {/*  <h3>*/}
-      {/*    &copy; 2024 Landing page made by{' '}*/}
-      {/*    <a*/}
-      {/*      rel='noreferrer noopener'*/}
-      {/*      target='_blank'*/}
-      {/*      href='https://www.linkedin.com/in/leopoldo-miranda/'*/}
-      {/*      className='text-primary transition-all border-primary hover:border-b-2'*/}
-      {/*    >*/}
-      {/*      Leo Miranda*/}
-      {/*    </a>*/}
-      {/*  </h3>*/}
-      {/*</section>*/}
+      <section className='container pb-14 text-center'>
+        <h3>
+          &copy; {new Date().getFullYear()} BapBi. All rights reserved
+        </h3>
+      </section>
     </footer>
   )
 }

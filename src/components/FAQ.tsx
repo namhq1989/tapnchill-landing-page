@@ -45,7 +45,7 @@ const FAQList: FAQProps[] = [
   {
     question: 'How can I sync data between devices?',
     answer:
-      'Users need to log in to sync their tasks, habits, and preferences across devices.',
+      'If you want to keep your tasks, habits, and preferences consistent across all your devices, you’ll need to log in to your account. This ensures everything stays up to date no matter where you access the app.',
     value: 'item-7',
   },
 ]
@@ -67,7 +67,7 @@ export const FAQ = () => {
               {question}
             </AccordionTrigger>
 
-            <AccordionContent>{answer}</AccordionContent>
+            <AccordionContent className='leading-6'>{answer}</AccordionContent>
           </AccordionItem>
         ))}
       </Accordion>

@@ -12,10 +12,10 @@ import {
   SheetTrigger,
 } from '@/components/ui/sheet'
 
-import { GitHubLogoIcon } from '@radix-ui/react-icons'
 import { buttonVariants } from './ui/button'
 import { Menu } from 'lucide-react'
 import { ModeToggle } from './mode-toggle'
+import extensionStoreIcon from '../assets/extension-store-icon.png'
 
 interface RouteProps {
   href: string
@@ -75,7 +75,7 @@ export const Navbar = () => {
               <SheetContent side={'left'}>
                 <SheetHeader>
                   <SheetTitle className='font-bold text-xl'>
-                    Shadcn/React
+                    BapBi
                   </SheetTitle>
                 </SheetHeader>
                 <nav className='flex flex-col justify-center items-center gap-2 mt-4'>
@@ -98,8 +98,8 @@ export const Navbar = () => {
                       variant: 'secondary',
                     })}`}
                   >
-                    <GitHubLogoIcon className='mr-2 w-5 h-5' />
-                    Github
+                    <img src={extensionStoreIcon} width={20} height={20} className="mr-2" alt="extension store" />
+                    Store
                   </a>
                 </nav>
               </SheetContent>
@@ -123,15 +123,17 @@ export const Navbar = () => {
           </nav>
 
           <div className='hidden md:flex gap-2'>
-            {/*<a*/}
-            {/*  rel='noreferrer noopener'*/}
-            {/*  href='https://github.com/leoMirandaa/shadcn-landing-page.git'*/}
-            {/*  target='_blank'*/}
-            {/*  className={`border ${buttonVariants({ variant: 'secondary' })}`}*/}
-            {/*>*/}
-            {/*  <GitHubLogoIcon className='mr-2 w-5 h-5' />*/}
-            {/*  Github*/}
-            {/*</a>*/}
+            <a
+              rel='noreferrer noopener'
+              href='https://github.com/leoMirandaa/shadcn-landing-page.git'
+              target='_blank'
+              className={`border ${buttonVariants({ variant: 'secondary' })}`}
+            >
+
+              <img src={extensionStoreIcon} width={20} height={20} className='mr-2' alt='extension store' />
+              {/*<GitHubLogoIcon className='mr-2 w-5 h-5' />*/}
+              Store
+            </a>
 
             <ModeToggle />
           </div>
