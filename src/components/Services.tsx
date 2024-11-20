@@ -1,5 +1,5 @@
 import { Card, CardDescription, CardHeader, CardTitle } from './ui/card'
-import { ChartIcon, GiftIcon, MapIcon, PlaneIcon } from './Icons'
+import { ChartIcon, MapIcon, PlaneIcon } from './Icons'
 import cubeLeg from '../assets/cube-leg.png'
 
 interface ServiceProps {

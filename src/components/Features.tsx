@@ -1,4 +1,3 @@
-import { Badge } from "./ui/badge";
 import {
   Card,
   CardContent,
@@ -6,9 +5,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import image from "../assets/growth.png";
-import image3 from "../assets/reflecting.png";
-import image4 from "../assets/looking-ahead.png";
 
 interface FeatureProps {
   title: string;
@@ -18,36 +14,36 @@ interface FeatureProps {
 
 const features: FeatureProps[] = [
   {
-    title: "Responsive Design",
+    title: "Stay Organized, Stay Ahead",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-    image: image4,
+      "Manage your goals and tasks effortlessly, keeping everything on track and within reach",
+    image: 'https://i.bapbi.app/ss-habits.jpg',
   },
   {
-    title: "Intuitive user interface",
+    title: "Build Better Routines",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-    image: image3,
+      "Track your habits, maintain streaks, and achieve your personal growth goals with ease",
+    image: 'https://i.bapbi.app/ss-tasks.jpg',
   },
   {
-    title: "AI-Powered insights",
+    title: "Enhance Your Experience",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-    image: image,
+      "From relaxing ambient sounds to personalized insights, explore tools designed to help you unwind and focus",
+    image: 'https://i.bapbi.app/ss-misc.jpg',
   },
 ];
 
-const featureList: string[] = [
-  "Dark/Light theme",
-  "Reviews",
-  "Features",
-  "Pricing",
-  "Contact form",
-  "Our team",
-  "Responsive design",
-  "Newsletter",
-  "Minimalist",
-];
+// const featureList: string[] = [
+//   "Dark/Light theme",
+//   "Reviews",
+//   "Features",
+//   "Pricing",
+//   "Contact form",
+//   "Our team",
+//   "Responsive design",
+//   "Newsletter",
+//   "Minimalist",
+// ];
 
 export const Features = () => {
   return (
@@ -62,18 +58,18 @@ export const Features = () => {
         </span>
       </h2>
 
-      <div className="flex flex-wrap md:justify-center gap-4">
-        {featureList.map((feature: string) => (
-          <div key={feature}>
-            <Badge
-              variant="secondary"
-              className="text-sm"
-            >
-              {feature}
-            </Badge>
-          </div>
-        ))}
-      </div>
+      {/*<div className="flex flex-wrap md:justify-center gap-4">*/}
+      {/*  {featureList.map((feature: string) => (*/}
+      {/*    <div key={feature}>*/}
+      {/*      <Badge*/}
+      {/*        variant="secondary"*/}
+      {/*        className="text-sm"*/}
+      {/*      >*/}
+      {/*        {feature}*/}
+      {/*      </Badge>*/}
+      {/*    </div>*/}
+      {/*  ))}*/}
+      {/*</div>*/}
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {features.map(({ title, description, image }: FeatureProps) => (
@@ -82,13 +78,13 @@ export const Features = () => {
               <CardTitle>{title}</CardTitle>
             </CardHeader>
 
-            <CardContent>{description}</CardContent>
+            <CardContent className='min-h-[120px]'>{description}</CardContent>
 
             <CardFooter>
               <img
                 src={image}
                 alt="About feature"
-                className="w-[200px] lg:w-[300px] mx-auto"
+                className="w-[200px] lg:w-[300px] mx-auto border border-primary"
               />
             </CardFooter>
           </Card>

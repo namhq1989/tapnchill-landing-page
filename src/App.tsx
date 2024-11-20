@@ -6,6 +6,7 @@ import { Navbar } from './components/Navbar'
 import { Pricing } from './components/Pricing'
 import { ScrollToTop } from './components/ScrollToTop'
 import { Services } from './components/Services'
+import { Features } from '@/components/Features.tsx'
 import './App.css'
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
       {/*<Sponsors />*/}
       <About />
       {/*<HowItWorks />*/}
-      {/*<Features />*/}
+      <Features />
       <Services />
       {/*<Cta />*/}
       {/*<Testimonials />*/}
