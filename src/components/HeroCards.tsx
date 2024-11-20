@@ -105,7 +105,7 @@ export const HeroCards = () => {
 
       {/* Pricing */}
       <img
-        src={`https://pub-201fde14d9f8483d8fc77f86a4efcc41.r2.dev/ss-home-${theme}.png`}
+        src={`https://i.bapbi.app/ss-home-${theme}.png`}
         alt='home'
         width={340}
         className='absolute top-[150px] left-[0px] rounded-xl drop-shadow-xl shadow-black/10 dark:shadow-white/10'

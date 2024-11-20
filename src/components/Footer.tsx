@@ -15,38 +15,38 @@ export const Footer = () => {
           </a>
         </div>
 
-        <div className='flex flex-col gap-2'>
-          <h3 className='font-bold text-lg'>Follow US</h3>
-          <div>
-            <a
-              rel='noreferrer noopener'
-              href='#'
-              className='opacity-60 hover:opacity-100'
-            >
-              Twitter
-            </a>
-          </div>
+        {/*<div className='flex flex-col gap-2'>*/}
+        {/*  <h3 className='font-bold text-lg'>Follow US</h3>*/}
+        {/*  <div>*/}
+        {/*    <a*/}
+        {/*      rel='noreferrer noopener'*/}
+        {/*      href='#'*/}
+        {/*      className='opacity-60 hover:opacity-100'*/}
+        {/*    >*/}
+        {/*      Twitter*/}
+        {/*    </a>*/}
+        {/*  </div>*/}
 
-          <div>
-            <a
-              rel='noreferrer noopener'
-              href='#'
-              className='opacity-60 hover:opacity-100'
-            >
-              Facebook
-            </a>
-          </div>
+        {/*  <div>*/}
+        {/*    <a*/}
+        {/*      rel='noreferrer noopener'*/}
+        {/*      href='#'*/}
+        {/*      className='opacity-60 hover:opacity-100'*/}
+        {/*    >*/}
+        {/*      Facebook*/}
+        {/*    </a>*/}
+        {/*  </div>*/}
 
-          {/*<div>*/}
-          {/*  <a*/}
-          {/*    rel='noreferrer noopener'*/}
-          {/*    href='#'*/}
-          {/*    className='opacity-60 hover:opacity-100'*/}
-          {/*  >*/}
-          {/*    Dribbble*/}
-          {/*  </a>*/}
-          {/*</div>*/}
-        </div>
+        {/*  /!*<div>*!/*/}
+        {/*  /!*  <a*!/*/}
+        {/*  /!*    rel='noreferrer noopener'*!/*/}
+        {/*  /!*    href='#'*!/*/}
+        {/*  /!*    className='opacity-60 hover:opacity-100'*!/*/}
+        {/*  /!*  >*!/*/}
+        {/*  /!*    Dribbble*!/*/}
+        {/*  /!*  </a>*!/*/}
+        {/*  /!*</div>*!/*/}
+        {/*</div>*/}
 
         <div className='flex flex-col gap-2'>
           <h3 className='font-bold text-lg'>Platforms</h3>
@@ -60,15 +60,15 @@ export const Footer = () => {
             </a>
           </div>
 
-          <div>
-            <a
-              rel='noreferrer noopener'
-              href='#'
-              className='opacity-60 hover:opacity-100'
-            >
-              Mobile
-            </a>
-          </div>
+          {/*<div>*/}
+          {/*  <a*/}
+          {/*    rel='noreferrer noopener'*/}
+          {/*    href='#'*/}
+          {/*    className='opacity-60 hover:opacity-100'*/}
+          {/*  >*/}
+          {/*    Mobile*/}
+          {/*  </a>*/}
+          {/*</div>*/}
 
           {/*<div>*/}
           {/*  <a*/}
@@ -86,7 +86,7 @@ export const Footer = () => {
           <div>
             <a
               rel='noreferrer noopener'
-              href='#features'
+              href='#'
               className='opacity-60 hover:opacity-100'
             >
               Features

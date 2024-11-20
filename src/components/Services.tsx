@@ -1,5 +1,5 @@
 import { Card, CardDescription, CardHeader, CardTitle } from './ui/card'
-import { ChartIcon, MagnifierIcon, WalletIcon } from './Icons'
+import { ChartIcon, GiftIcon, MapIcon, PlaneIcon } from './Icons'
 import cubeLeg from '../assets/cube-leg.png'
 
 interface ServiceProps {
@@ -19,13 +19,13 @@ const serviceList: ServiceProps[] = [
     title: 'Master Your Habits',
     description:
       'Track your daily habits and build lasting routines. With easy-to-use tools and clear progress insights, stay motivated and achieve your goals effortlessly',
-    icon: <WalletIcon />,
+    icon: <PlaneIcon />,
   },
   {
     title: 'Simplify Task Management',
     description:
       'Organize your tasks seamlessly and keep everything on track. Whether it’s work or personal, manage it all in one place and reclaim control of your time',
-    icon: <MagnifierIcon />,
+    icon: <MapIcon />,
   },
 ]
 
