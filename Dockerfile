@@ -10,6 +10,9 @@ RUN pnpm install
 
 COPY . .
 
+ENV VITE_PADDLE_ENVIRONMENT=sandbox
+ENV VITE_PADDLE_TOKEN=test_1a97ba5a066454fb188ee93801d
+
 RUN pnpm run build
 
 FROM nginx:alpine AS production
