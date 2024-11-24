@@ -10,6 +10,7 @@ import { Features } from '@/components/Features.tsx'
 import './App.css'
 import { useEffect, useState } from 'react'
 import { initializePaddle, Paddle } from '@paddle/paddle-js'
+import { Toaster } from '@/components/ui/toaster.tsx'
 
 function App() {
   const [paddle, setPaddle] = useState<Paddle>()
@@ -48,6 +49,7 @@ function App() {
 
   return (
     <>
+      <Toaster />
       <Navbar />
       <Hero />
       {/*<Sponsors />*/}

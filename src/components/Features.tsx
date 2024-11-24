@@ -4,34 +4,34 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
+} from '@/components/ui/card'
 
 interface FeatureProps {
-  title: string;
-  description: string;
-  image: string;
+  title: string
+  description: string
+  image: string
 }
 
 const features: FeatureProps[] = [
   {
-    title: "Stay Organized, Stay Ahead",
+    title: 'Stay Organized, Stay Ahead',
     description:
-      "Manage your goals and tasks effortlessly, keeping everything on track and within reach",
+      'Manage your goals and tasks effortlessly, keeping everything on track and within reach',
     image: 'https://i.bapbi.app/ss-habits.jpg',
   },
   {
-    title: "Build Better Routines",
+    title: 'Build Better Routines',
     description:
-      "Track your habits, maintain streaks, and achieve your personal growth goals with ease",
+      'Track your habits, maintain streaks, and achieve your personal growth goals with ease',
     image: 'https://i.bapbi.app/ss-tasks.jpg',
   },
   {
-    title: "Enhance Your Experience",
+    title: 'Enhance Your Experience',
     description:
-      "From relaxing ambient sounds to personalized insights, explore tools designed to help you unwind and focus",
+      'From relaxing ambient sounds to personalized insights, explore tools designed to help you unwind and focus',
     image: 'https://i.bapbi.app/ss-misc.jpg',
   },
-];
+]
 
 // const featureList: string[] = [
 //   "Dark/Light theme",
@@ -47,13 +47,10 @@ const features: FeatureProps[] = [
 
 export const Features = () => {
   return (
-    <section
-      id="features"
-      className="container py-24 sm:py-32 space-y-8"
-    >
-      <h2 className="text-3xl lg:text-4xl font-bold md:text-center">
-        Many{" "}
-        <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
+    <section id='features' className='container py-24 sm:py-32 space-y-8'>
+      <h2 className='text-3xl lg:text-4xl font-bold md:text-center'>
+        Many{' '}
+        <span className='bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text'>
           Great Features
         </span>
       </h2>
@@ -71,7 +68,7 @@ export const Features = () => {
       {/*  ))}*/}
       {/*</div>*/}
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
         {features.map(({ title, description, image }: FeatureProps) => (
           <Card key={title}>
             <CardHeader>
@@ -83,13 +80,13 @@ export const Features = () => {
             <CardFooter>
               <img
                 src={image}
-                alt="About feature"
-                className="w-[200px] lg:w-[300px] mx-auto border border-primary"
+                alt='About feature'
+                className='sm:w-[200px] w-full lg:w-[300px] mx-auto border border-primary'
               />
             </CardFooter>
           </Card>
         ))}
       </div>
     </section>
-  );
-};
+  )
+}

@@ -8,6 +8,7 @@ import {
   CardTitle,
 } from '@/components/ui/card'
 import { Check } from 'lucide-react'
+import { useToast } from '@/hooks/use-toast.ts'
 
 enum PopularPlanType {
   NO = 0,
@@ -34,13 +35,13 @@ const pricingList: PricingProps[] = [
       'Get started with essential features for productivity and relaxation',
     buttonText: 'Free to use',
     benefitList: [
-      "Access to all radio stations",
-      "Play 1 ambient sound at a time",
-      "Track up to 5 habits",
-      "Manage up to 5 goals",
-      "Create up to 20 tasks per goal",
-      "Access to all basic features",
-    ]
+      'Access to all radio stations',
+      'Play 2 ambient sounds at a time',
+      'Track up to 5 habits',
+      'Manage up to 5 goals',
+      'Create up to 20 tasks per goal',
+      'Access to all other features',
+    ],
   },
   {
     id: 'pro',
@@ -51,32 +52,19 @@ const pricingList: PricingProps[] = [
       'Upgrade for more habits, goals, and tasks with the same great features',
     buttonText: 'Upgrade',
     benefitList: [
-      "Access to all radio stations",
-      "Play unlimited ambient sounds",
-      "Track up to 20 habits",
-      "Manage up to 20 goals",
-      "Create up to 50 tasks per goal",
-      "Full access to all premium features",
+      'Access to all radio stations',
+      'Play unlimited ambient sounds',
+      'Track up to 20 habits',
+      'Manage up to 20 goals',
+      'Create up to 50 tasks per goal',
+      'Access to all other features',
     ],
   },
-  // {
-  //   title: "Enterprise",
-  //   popular: 0,
-  //   price: 40,
-  //   description:
-  //     "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-  //   buttonText: "Contact US",
-  //   benefitList: [
-  //     "10 Team member",
-  //     "8 GB Storage",
-  //     "Upto 10 pages",
-  //     "Priority support",
-  //     "lorem ipsum dolor",
-  //   ],
-  // },
 ]
 
 export const Pricing = () => {
+  const { toast } = useToast()
+
   return (
     <section id='pricing' className='container py-24 sm:py-32'>
       <h2 className='text-3xl md:text-4xl font-bold text-center'>
@@ -109,41 +97,53 @@ export const Pricing = () => {
                 {/*  </Badge>*/}
                 {/*) : null}*/}
               </CardTitle>
-              {
-                pricing.id === 'free' ? (
-                    <div>
-                      <span className="text-3xl font-bold">${pricing.price}</span>
-                      <span className="text-muted-foreground"> /month</span>
-                    </div>
-                ) : (
-                  <div className='flex flex-row gap-4 items-end'>
-                    <div>
-                      <span className="text-3xl font-bold">${pricing.price}</span>
-                      <span className="text-muted-foreground"> /month</span>
-                    </div>
-
-                    <span className='text-xl'> OR</span>
-
-                    <div>
-                      <span className="text-3xl font-bold">$30</span>
-                      <span className="text-muted-foreground"> /year</span>
-                      <span className="font-bold"> (-20%)</span>
-                    </div>
+              {pricing.id === 'free' ? (
+                <div>
+                  <span className='text-3xl font-bold'>${pricing.price}</span>
+                  <span className='text-muted-foreground'> /month</span>
+                </div>
+              ) : (
+                <div className='flex flex-row gap-2 items-center sm:items-end'>
+                  <div>
+                    <span className='text-3xl font-bold'>${pricing.price}</span>
+                    <span className='text-muted-foreground'> /month</span>
                   </div>
-                )
-              }
+
+                  <span className='text-base font-bold'> OR</span>
+
+                  <div>
+                    <span className='text-3xl font-bold'>$30</span>
+                    <span className='text-muted-foreground'> /year</span>
+                    <span className='font-bold'> (+2 months)</span>
+                  </div>
+                </div>
+              )}
 
               <CardDescription>{pricing.description}</CardDescription>
             </CardHeader>
 
             <CardContent>
-              <Button className="w-full" variant={pricing.id === 'free' ? 'outline' : 'default'}>{pricing.buttonText}</Button>
+              <Button
+                className='w-full'
+                variant={pricing.id === 'free' ? 'outline' : 'default'}
+                onClick={() => {
+                  if (pricing.id === 'pro') {
+                    toast({
+                      title: 'BapBi',
+                      description:
+                        'Upgrade to Pro through the Chrome extension only',
+                    })
+                  }
+                }}
+              >
+                {pricing.buttonText}
+              </Button>
             </CardContent>
 
-            <hr className="w-4/5 m-auto mb-4" />
+            <hr className='w-4/5 m-auto mb-4' />
 
-            <CardFooter className="flex">
-            <div className='space-y-4'>
+            <CardFooter className='flex'>
+              <div className='space-y-4'>
                 {pricing.benefitList.map((benefit: string) => (
                   <span key={benefit} className='flex'>
                     <Check className='text-green-500' />{' '}
