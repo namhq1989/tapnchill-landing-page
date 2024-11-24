@@ -22,8 +22,8 @@ export const About = () => {
               <p className='text-xl text-muted-foreground mt-4'>
                 An app designed to boost your productivity and bring relaxation
                 to your day. With features like radio stations, ambient sounds,
-                habit tracking, and task management, it helps you stay organized
-                and unwind in your own way.
+                habit tracking, task management, ..., it helps you stay
+                organized and unwind in your own way.
               </p>
             </div>
 

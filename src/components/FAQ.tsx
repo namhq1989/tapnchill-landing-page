@@ -76,7 +76,7 @@ export const FAQ = () => {
         Still have questions?{' '}
         <a
           rel='noreferrer noopener'
-          href='mailto:namhq.1989@gmail.com'
+          href='mailto:hi@bapbi.app'
           className='text-primary transition-all border-primary hover:border-b-2'
         >
           Contact us
