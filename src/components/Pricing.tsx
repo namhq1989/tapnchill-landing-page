@@ -90,7 +90,14 @@ export const Pricing = () => {
           >
             <CardHeader>
               <CardTitle className='flex item-center justify-between'>
-                {pricing.title}
+                <div className='flex flex-row justify-between w-full'>
+                  {pricing.title}
+                  {pricing.id === 'pro' && (
+                    <p className='text-sm text-muted-foreground'>
+                      * Money-back guarantee: 14 days
+                    </p>
+                  )}
+                </div>
                 {/*{pricing.popular === PopularPlanType.YES ? (*/}
                 {/*  <Badge variant='secondary' className='text-sm text-primary'>*/}
                 {/*    Most popular*/}

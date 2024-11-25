@@ -81,7 +81,37 @@ const Tnc = () => {
       </section>
 
       <section className='mb-8'>
-        <h2 className='text-2xl font-bold'>5. Changes to These Terms</h2>
+        <h2 className='text-2xl font-bold'>5. Refund Policy</h2>
+        <p className='mt-4'>
+          We want you to be satisfied with your purchase. If you are not
+          satisfied, refunds are subject to the following conditions:
+        </p>
+        <ul className='mt-4 list-disc list-inside'>
+          <li>
+            Refunds are only available for the Pro Plan and must be requested
+            within 14 days of purchase.
+          </li>
+          <li>
+            To request a refund, please contact us at{' '}
+            <a href='mailto:hi@bapbi.app' className='text-primary'>
+              hi@bapbi.app
+            </a>{' '}
+            with your purchase details.
+          </li>
+          <li>Refunds may take 5-10 business days to process.</li>
+          <li>
+            No refunds will be issued for improper use of the Extension or
+            violation of the Terms & Conditions.
+          </li>
+        </ul>
+        <p className='mt-4'>
+          Payments are securely processed through Paddle, and any disputes or
+          inquiries related to payments should be directed to them.
+        </p>
+      </section>
+
+      <section className='mb-8'>
+        <h2 className='text-2xl font-bold'>6. Changes to These Terms</h2>
         <p className='mt-4'>
           We reserve the right to update or modify these Terms at any time. Any
           changes will be posted here, and the "Effective Date" will be updated
