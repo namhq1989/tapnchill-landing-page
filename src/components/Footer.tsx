@@ -1,3 +1,5 @@
+import { Link } from 'wouter'
+
 export const Footer = () => {
   return (
     <footer id='footer'>
@@ -114,44 +116,31 @@ export const Footer = () => {
           </div>
         </div>
 
-        {/*<div className='flex flex-col gap-2'>*/}
-        {/*  <h3 className='font-bold text-lg'>Community</h3>*/}
-        {/*  <div>*/}
-        {/*    <a*/}
-        {/*      rel='noreferrer noopener'*/}
-        {/*      href='#'*/}
-        {/*      className='opacity-60 hover:opacity-100'*/}
-        {/*    >*/}
-        {/*      Youtube*/}
-        {/*    </a>*/}
-        {/*  </div>*/}
-
-        {/*  <div>*/}
-        {/*    <a*/}
-        {/*      rel='noreferrer noopener'*/}
-        {/*      href='#'*/}
-        {/*      className='opacity-60 hover:opacity-100'*/}
-        {/*    >*/}
-        {/*      Discord*/}
-        {/*    </a>*/}
-        {/*  </div>*/}
-
-        {/*  <div>*/}
-        {/*    <a*/}
-        {/*      rel='noreferrer noopener'*/}
-        {/*      href='#'*/}
-        {/*      className='opacity-60 hover:opacity-100'*/}
-        {/*    >*/}
-        {/*      Twitch*/}
-        {/*    </a>*/}
-        {/*  </div>*/}
-        {/*</div>*/}
+        <div className='flex flex-col gap-2'>
+          <h3 className='font-bold text-lg'>Legal</h3>
+          <div>
+            <Link
+              rel='noreferrer noopener'
+              href='/policy'
+              className='opacity-60 hover:opacity-100'
+            >
+              Policy
+            </Link>
+          </div>
+          <div>
+            <Link
+              rel='noreferrer noopener'
+              href='/terms-and-conditions'
+              className='opacity-60 hover:opacity-100'
+            >
+              Terms & Conditions
+            </Link>
+          </div>
+        </div>
       </section>
 
       <section className='container pb-14 text-center'>
-        <h3>
-          &copy; {new Date().getFullYear()} BapBi. All rights reserved
-        </h3>
+        <h3>&copy; {new Date().getFullYear()} BapBi. All rights reserved</h3>
       </section>
     </footer>
   )
