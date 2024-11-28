@@ -37,6 +37,7 @@ const pricingList: PricingProps[] = [
     benefitList: [
       'Access to all radio stations',
       'Play 2 ambient sounds at a time',
+      'Create up to 20 notes',
       'Track up to 5 habits',
       'Manage up to 5 goals',
       'Create up to 20 tasks per goal',
@@ -54,6 +55,7 @@ const pricingList: PricingProps[] = [
     benefitList: [
       'Access to all radio stations',
       'Play unlimited ambient sounds',
+      'Create up to 1000 notes',
       'Track up to 20 habits',
       'Manage up to 20 goals',
       'Create up to 50 tasks per goal',
@@ -121,7 +123,7 @@ export const Pricing = () => {
                   <div>
                     <span className='text-3xl font-bold'>$30</span>
                     <span className='text-muted-foreground'> /year</span>
-                    <span className='font-bold'> (+2 months)</span>
+                    <span className='font-bold'> (2 months free)</span>
                   </div>
                 </div>
               )}
