@@ -105,7 +105,7 @@ const Tnc = () => {
           </li>
         </ul>
         <p className='mt-4'>
-          Payments are securely processed through Paddle, and any disputes or
+          Payments are securely processed through FastSpring, and any disputes or
           inquiries related to payments should be directed to them.
         </p>
       </section>
