@@ -7,11 +7,8 @@ import {
   CardTitle,
 } from '@/components/ui/card'
 import { LightBulbIcon } from './Icons'
-import { useTheme } from '@/components/theme-provider.tsx'
 
 export const HeroCards = () => {
-  const { theme } = useTheme()
-
   return (
     <div className='hidden lg:flex flex-row flex-wrap gap-8 relative w-[700px] h-[500px]'>
       {/* Testimonial */}
@@ -105,7 +102,7 @@ export const HeroCards = () => {
 
       {/* Pricing */}
       <img
-        src={`https://i.bapbi.app/ss-home-${theme}.png`}
+        src={`https://i.bapbi.app/ldp-ss-home.png`}
         alt='home'
         width={340}
         className='absolute top-[150px] left-[0px] rounded-xl drop-shadow-xl shadow-black/10 dark:shadow-white/10'
