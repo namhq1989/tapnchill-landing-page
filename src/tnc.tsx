@@ -105,8 +105,8 @@ const Tnc = () => {
           </li>
         </ul>
         <p className='mt-4'>
-          Payments are securely processed through FastSpring, and any disputes or
-          inquiries related to payments should be directed to them.
+          Payments are securely processed through Payment Processors, and any
+          disputes or inquiries related to payments should be directed to them.
         </p>
       </section>
 
