@@ -17,19 +17,19 @@ const features: FeatureProps[] = [
     title: 'Stay Organized, Stay Ahead',
     description:
       'Manage your goals and tasks effortlessly, keeping everything on track and within reach',
-    image: 'https://i.bapbi.app/ss-habits.jpg',
+    image: 'https://i.bapbi.app/ldp-ss-task.png',
   },
   {
     title: 'Build Better Routines',
     description:
       'Track your habits, maintain streaks, and achieve your personal growth goals with ease',
-    image: 'https://i.bapbi.app/ss-tasks.jpg',
+    image: 'https://i.bapbi.app/ldp-ss-habit.png',
   },
   {
     title: 'Enhance Your Experience',
     description:
       'From relaxing ambient sounds to personalized insights, explore tools designed to help you unwind and focus',
-    image: 'https://i.bapbi.app/ss-misc.jpg',
+    image: 'https://i.bapbi.app/ldp-ss-stats.png',
   },
 ]
 
