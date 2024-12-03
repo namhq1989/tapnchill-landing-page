@@ -12,6 +12,7 @@ import './App.css'
 // import { useEffect, useState } from 'react'
 // import { initializePaddle, Paddle } from '@paddle/paddle-js'
 import { Toaster } from '@/components/ui/toaster.tsx'
+import { useEffect, useState } from 'react'
 
 const View = () => {
   return (
@@ -76,32 +77,25 @@ const View = () => {
 // }
 
 function App() {
-  // const [isUIReady, setIsUIReady] = useState(false);
-  //
-  // useEffect(() => {
-  //   // Simulate the app UI rendering completion
-  //   const timer = setTimeout(() => setIsUIReady(true), 100); // Wait for UI to "load"
-  //   return () => clearTimeout(timer); // Cleanup timer
-  // }, []);
-  //
-  // useEffect(() => {
-  //   if (isUIReady && window.fastspring) {
-  //     const token = new URLSearchParams(window.location.search).get('c');
-  //     if (token) {
-  //       const components = atob(token).split(':');
-  //       if (!components.length) return;
-  //
-  //       const [userId, product] = components;
-  //       window.fastspring.builder.reset();
-  //       window.fastspring.builder.add(product);
-  //       window.fastspring.builder.tag({ userId });
-  //       window.fastspring.builder.checkout();
-  //
-  //       const newUrl = window.location.origin + window.location.pathname;
-  //       window.history.replaceState(null, '', newUrl);
-  //     }
-  //   }
-  // }, [isUIReady]);
+  const [isUIReady, setIsUIReady] = useState(false)
+
+  useEffect(() => {
+    // simulate the app UI rendering completion
+    const timer = setTimeout(() => setIsUIReady(true), 300)
+    return () => clearTimeout(timer) // Cleanup timer
+  }, [])
+
+  useEffect(() => {
+    if (isUIReady && window.LemonSqueezy) {
+      const c = new URLSearchParams(window.location.search).get('c')
+      if (c) {
+        const checkoutUrl = atob(c)
+        window.LemonSqueezy.Url.Open(checkoutUrl)
+        const newUrl = window.location.origin + window.location.pathname
+        window.history.replaceState(null, '', newUrl)
+      }
+    }
+  }, [isUIReady])
 
   return <View />
 }
