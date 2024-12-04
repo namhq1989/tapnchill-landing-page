@@ -74,9 +74,7 @@ export const Navbar = () => {
 
               <SheetContent side={'left'}>
                 <SheetHeader>
-                  <SheetTitle className='font-bold text-xl'>
-                    BapBi
-                  </SheetTitle>
+                  <SheetTitle className='font-bold text-xl'>BapBi</SheetTitle>
                 </SheetHeader>
                 <nav className='flex flex-col justify-center items-center gap-2 mt-4'>
                   {routeList.map(({ href, label }: RouteProps) => (
@@ -98,7 +96,13 @@ export const Navbar = () => {
                       variant: 'secondary',
                     })}`}
                   >
-                    <img src={extensionStoreIcon} width={20} height={20} className="mr-2" alt="extension store" />
+                    <img
+                      src={extensionStoreIcon}
+                      width={20}
+                      height={20}
+                      className='mr-2'
+                      alt='extension store'
+                    />
                     Store
                   </a>
                 </nav>
@@ -125,12 +129,17 @@ export const Navbar = () => {
           <div className='hidden md:flex gap-2'>
             <a
               rel='noreferrer noopener'
-              href='#'
+              href='https://chromewebstore.google.com/detail/bapbi/ahpbddfeddnminklkodiapofdddmcmlb'
               target='_blank'
               className={`border ${buttonVariants({ variant: 'secondary' })}`}
             >
-
-              <img src={extensionStoreIcon} width={20} height={20} className='mr-2' alt='extension store' />
+              <img
+                src={extensionStoreIcon}
+                width={20}
+                height={20}
+                className='mr-2'
+                alt='extension store'
+              />
               {/*<GitHubLogoIcon className='mr-2 w-5 h-5' />*/}
               Store
             </a>

@@ -55,10 +55,11 @@ export const Footer = () => {
           <div>
             <a
               rel='noreferrer noopener'
-              href='#'
+              href='https://chromewebstore.google.com/detail/bapbi/ahpbddfeddnminklkodiapofdddmcmlb'
+              target='_blank'
               className='opacity-60 hover:opacity-100'
             >
-              Extension
+              Chrome Extension
             </a>
           </div>
 
