@@ -6,7 +6,7 @@ export const Statistics = () => {
 
   const stats: statsProps[] = [
     {
-      quantity: '100+',
+      quantity: '10+',
       description: 'Radio stations',
     },
     {
@@ -18,8 +18,8 @@ export const Statistics = () => {
       description: 'Features',
     },
     {
-      quantity: '< 1MB',
-      description: 'Size',
+      quantity: 'Free',
+      description: 'to use',
     },
   ]
 

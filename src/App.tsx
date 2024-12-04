@@ -76,7 +76,7 @@ const View = () => {
 //   return <View />
 // }
 
-function loadLemonSqueezyScript(callback) {
+function loadLemonSqueezyScript(callback: () => void) {
   const existingScript = document.querySelector(
     'script[src="https://app.lemonsqueezy.com/js/lemon.js"]',
   )
