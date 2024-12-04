@@ -76,18 +76,57 @@ const View = () => {
 //   return <View />
 // }
 
+function loadLemonSqueezyScript(callback) {
+  const existingScript = document.querySelector(
+    'script[src="https://app.lemonsqueezy.com/js/lemon.js"]',
+  )
+  if (existingScript) {
+    if (window.LemonSqueezy) {
+      callback() // Script already loaded
+    } else {
+      existingScript.addEventListener('load', callback)
+    }
+    return
+  }
+
+  const script = document.createElement('script')
+  script.src = 'https://app.lemonsqueezy.com/js/lemon.js'
+  script.async = true
+
+  script.onload = () => {
+    callback() // Script loaded successfully
+  }
+
+  script.onerror = () => {
+    console.error('Failed to load Lemonsqueezy script. Retrying...')
+    setTimeout(() => loadLemonSqueezyScript(callback), 1000) // Retry after 1 second
+  }
+
+  document.head.appendChild(script)
+}
+
 function App() {
   const [isUIReady, setIsUIReady] = useState(false)
+  const [isLemonSqueezyReady, setIsLemonSqueezyReady] = useState(false)
 
   useEffect(() => {
-    // simulate the app UI rendering completion
+    // Simulate UI rendering completion
     const timer = setTimeout(() => setIsUIReady(true), 300)
-    return () => clearTimeout(timer) // Cleanup timer
+    return () => clearTimeout(timer)
   }, [])
 
   useEffect(() => {
-    if (isUIReady && window.LemonSqueezy) {
+    // Load the Lemonsqueezy script
+    loadLemonSqueezyScript(() => {
+      setIsLemonSqueezyReady(true)
+    })
+  }, [])
+
+  // Open checkout overlay if UI and Lemonsqueezy are ready
+  useEffect(() => {
+    if (isUIReady && isLemonSqueezyReady && window.LemonSqueezy) {
       const c = new URLSearchParams(window.location.search).get('c')
+      // console.log('c', c)
       if (c) {
         const checkoutUrl = atob(c)
         window.LemonSqueezy.Url.Open(checkoutUrl)
@@ -95,7 +134,7 @@ function App() {
         window.history.replaceState(null, '', newUrl)
       }
     }
-  }, [isUIReady])
+  }, [isUIReady, isLemonSqueezyReady])
 
   return <View />
 }
