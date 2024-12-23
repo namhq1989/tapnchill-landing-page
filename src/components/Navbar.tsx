@@ -90,7 +90,7 @@ export const Navbar = () => {
                   ))}
                   <a
                     rel='noreferrer noopener'
-                    href='#'
+                    href='https://chromewebstore.google.com/detail/bapbi/ahpbddfeddnminklkodiapofdddmcmlb'
                     target='_blank'
                     className={`w-[110px] border ${buttonVariants({
                       variant: 'secondary',

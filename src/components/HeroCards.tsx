@@ -15,7 +15,7 @@ export const HeroCards = () => {
       <Card className='absolute w-[340px] -top-[15px] drop-shadow-xl shadow-black/10 dark:shadow-white/10'>
         <CardHeader className='flex flex-row items-center gap-4 pb-2'>
           <Avatar>
-            <AvatarImage alt='' src='https://github.com/shadcn.png' />
+            <AvatarImage alt='' src='https://avatars.githubusercontent.com/u/1388374?v=4' />
             <AvatarFallback>SH</AvatarFallback>
           </Avatar>
 
@@ -102,10 +102,10 @@ export const HeroCards = () => {
 
       {/* Pricing */}
       <img
-        src={`https://i.bapbi.app/ldp-ss-home.png`}
+        src={`https://i.bapbi.app/ldp-ss-home.png?v=1`}
         alt='home'
         width={340}
-        className='absolute top-[150px] left-[0px] rounded-xl drop-shadow-xl shadow-black/10 dark:shadow-white/10'
+        className='absolute top-[150px] left-[0px] rounded-lg border shadow-sm drop-shadow-xl'
       />
       {/*<Card className="absolute top-[150px] left-[50px] w-72  drop-shadow-xl shadow-black/10 dark:shadow-white/10">*/}
       {/*  <CardHeader>*/}
