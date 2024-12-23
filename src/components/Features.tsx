@@ -17,20 +17,26 @@ const features: FeatureProps[] = [
     title: 'Stay Organized, Stay Ahead',
     description:
       'Manage your goals and tasks effortlessly, keeping everything on track and within reach',
-    image: 'https://i.bapbi.app/ldp-ss-task.png',
+    image: 'https://i.bapbi.app/ldp-ss-task.png?v=1',
   },
   {
     title: 'Build Better Routines',
     description:
       'Track your habits, maintain streaks, and achieve your personal growth goals with ease',
-    image: 'https://i.bapbi.app/ldp-ss-habit.png',
+    image: 'https://i.bapbi.app/ldp-ss-habit.png?v=1',
   },
   {
-    title: 'Enhance Your Experience',
+    title: 'Focus with Precision',
     description:
-      'From relaxing ambient sounds to personalized insights, explore tools designed to help you unwind and focus',
-    image: 'https://i.bapbi.app/ldp-ss-stats.png',
+      'Master productivity with focused work sessions and strategic breaks, guided by our Pomodoro timer',
+    image: 'https://i.bapbi.app/ldp-ss-focus.png?v=1',
   },
+  // {
+  //   title: 'Enhance Your Experience',
+  //   description:
+  //     'From relaxing ambient sounds to personalized insights, explore tools designed to help you unwind and focus',
+  //   image: 'https://i.bapbi.app/ldp-ss-stats.png',
+  // },
 ]
 
 // const featureList: string[] = [
@@ -81,7 +87,7 @@ export const Features = () => {
               <img
                 src={image}
                 alt='About feature'
-                className='sm:w-[200px] w-full lg:w-[300px] mx-auto border border-primary'
+                className='sm:w-[200px] w-full lg:w-[300px] mx-auto rounded-lg border shadow-sm drop-shadow-xl'
               />
             </CardFooter>
           </Card>

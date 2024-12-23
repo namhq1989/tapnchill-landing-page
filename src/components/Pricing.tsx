@@ -38,9 +38,11 @@ const pricingList: PricingProps[] = [
       'Access to all radio stations',
       'Play 2 ambient sounds at a time',
       'Create up to 20 notes',
+      'Create up to 20 QR codes',
       'Track up to 5 habits',
       'Manage up to 5 goals',
       'Create up to 20 tasks per goal',
+      'Stay on track with Pomodoro sessions',
       'Access to all other features',
     ],
   },
@@ -55,10 +57,12 @@ const pricingList: PricingProps[] = [
     benefitList: [
       'Access to all radio stations',
       'Play unlimited ambient sounds',
-      'Create up to 1000 notes',
+      'Create up to 1,000 notes',
+      'Create up to 1,000 QR codes',
       'Track up to 20 habits',
       'Manage up to 20 goals',
-      'Create up to 50 tasks per goal',
+      'Create up to 100 tasks per goal',
+      'Stay on track with Pomodoro sessions',
       'Access to all other features',
     ],
   },
@@ -133,7 +137,7 @@ export const Pricing = () => {
 
             <CardContent>
               <Button
-                className='w-full'
+                className='w-full font-bold'
                 variant={pricing.id === 'free' ? 'outline' : 'default'}
                 onClick={() => {
                   if (pricing.id === 'pro') {
