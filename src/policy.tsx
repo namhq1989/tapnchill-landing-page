@@ -9,36 +9,66 @@ const Policy = () => {
 
       <header className='mb-8'>
         <h1 className='text-3xl font-bold'>Privacy Policy</h1>
-        <p>Effective Date: November, 2024</p>
+        <p>Effective Date: March, 2025</p>
       </header>
 
       <section className='mb-8'>
         <h2 className='text-2xl font-bold'>Introduction</h2>
         <p className='mt-4'>
-          Welcome to BapBi! This Privacy Policy explains how we ("BapBi," "we,"
-          "our," or "us") collect, use, and protect your information when you
-          use our Chrome extension. By using the extension, you agree to the
-          terms outlined below.
+          Welcome to BapBi and WordDrop! This Privacy Policy explains how we collect, use, 
+          and protect your information when you use our Chrome extensions. By using either extension, 
+          you agree to the terms outlined below.
         </p>
         <p className='mt-2'>
-          For more information, visit our website:
-          <a href='https://bapbi.app'>https://bapbi.app</a> or contact us at
-          <a href='mailto:hi@bapbi.app'>hi@bapbi.app</a>.
+          For more information, visit our website:{' '}
+          <a href='https://bapbi.app' className='text-primary'>https://bapbi.app</a> or contact us at{' '}
+          <a href='mailto:hi@bapbi.app' className='text-primary'>hi@bapbi.app</a>.
         </p>
       </section>
 
       <section className='mb-8'>
-        <h2 className='text-2xl font-bold'>1. Information We Collect</h2>
+        <h2 className='text-2xl font-bold'>Our Extensions</h2>
         <ul className='mt-4 list-disc list-inside'>
           <li>
+            <strong>BapBi:</strong> An extension designed to boost your productivity and bring relaxation to your day!
+          </li>
+          <li>
+            <strong>WordDrop:</strong> A vocabulary-building extension that introduces new words through real-time news context.
+          </li>
+        </ul>
+      </section>
+
+      <section className='mb-8'>
+        <h2 className='text-2xl font-bold'>1. Information We Collect</h2>
+        <h3 className='text-xl font-semibold mt-4'>Common to Both Extensions:</h3>
+        <ul className='mt-2 list-disc list-inside'>
+          <li>
             <strong>Local Data:</strong> Information stored locally on your
-            device, such as settings, preferences, or tasks.
+            device, such as settings and preferences.
+          </li>
+        </ul>
+        
+        <h3 className='text-xl font-semibold mt-4'>BapBi Specific:</h3>
+        <ul className='mt-2 list-disc list-inside'>
+          <li>
+            <strong>Local Data:</strong> Tasks and workflow information stored on your device.
           </li>
           <li>
             <strong>Server-Sent Data:</strong> Non-sensitive information may be
             sent to our servers to provide functionality and improve
             performance. This data is minimal and does not include personal or
             sensitive information.
+          </li>
+        </ul>
+
+        <h3 className='text-xl font-semibold mt-4'>WordDrop Specific:</h3>
+        <ul className='mt-2 list-disc list-inside'>
+          <li>
+            <strong>Local Data:</strong> Bookmarked vocabulary words and notification frequency preferences.
+          </li>
+          <li>
+            <strong>Server-Sent Data:</strong> News content to extract vocabulary words and examples. 
+            This process does not collect or store personal information.
           </li>
         </ul>
       </section>
@@ -50,9 +80,17 @@ const Policy = () => {
         </p>
         <ul className='mt-4 list-disc list-inside'>
           <li>
-            Enhancing the functionality and user experience of the extension.
+            Enhancing the functionality and user experience of our extensions.
           </li>
-          <li>Resolving bugs or issues reported by users.</li>
+          <li>
+            Providing personalized vocabulary learning (WordDrop).
+          </li>
+          <li>
+            Delivering notifications based on user preferences (WordDrop).
+          </li>
+          <li>
+            Resolving bugs or issues reported by users.
+          </li>
         </ul>
       </section>
 
@@ -86,11 +124,11 @@ const Policy = () => {
         <ul className='mt-4 list-disc list-inside'>
           <li>
             <strong>Manage Local Data:</strong> You can modify or delete
-            information stored locally through the extension's settings.
+            information stored locally through each extension's settings.
           </li>
           <li>
-            <strong>Request Assistance:</strong> Contact us at
-            <a href='mailto:hi@bapbi.app'>hi@bapbi.app</a> for questions or
+            <strong>Request Assistance:</strong> Contact us at{' '}
+            <a className='text-primary' href='mailto:hi@bapbi.app'>hi@bapbi.app</a> for questions or
             concerns about your data.
           </li>
         </ul>
@@ -110,7 +148,7 @@ const Policy = () => {
         <h2 className='text-2xl font-bold'>7. Contact Us</h2>
         <p className='mt-4'>
           If you have any questions, concerns, or feedback about this Privacy
-          Policy or the extension, please reach out to us at:
+          Policy or either extension, please reach out to us at:
         </p>
         <ul className='mt-4 list-none'>
           <li>
